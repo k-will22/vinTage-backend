@@ -3,6 +3,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
     create_table :items do |t|
       t.string :description
       t.decimal :price
+      t.string :size
       t.string :photo1
       t.string :photo2
 
