@@ -1,3 +1,4 @@
 class CartSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :total
+  attributes :id, :user, :item
+  belongs_to :user
 end

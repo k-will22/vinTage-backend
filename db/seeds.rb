@@ -7,6 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Item.destroy_all
+User.destroy_all
+Cart.destroy_all
+
+user1 = User.create(username: "Keith", password: "123")
 
 item1 = Item.create(description: "Green Day Insomniac Tour Shirt", price: 400.00, size: "L",
 photo1: "https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:1400/output=quality:70/compress/https://cdn.fs.grailed.com/api/file/AKXqF3qXSX2Fa1ih5O7X",
